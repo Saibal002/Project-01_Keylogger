@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <!-- <style>
+        .container{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            margin-top: 50px;
+        }
+        h1{
+            border:2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        #log,#state{
+            width:500px;
+            height:50px;
+
+            display:flex;
+            border:2px solid black;
+            border-radius: 20px;
+            padding:10px;
+            margin-top:20px;
+
+            background-color: blueviolet;
+            font-size: 20px;
+            text-align:center;
+            color:white;
+        }
+        .button-container{
+            display:flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        button{
+            font-size: 20px;
+            padding:20px;
+        }
+    </style> -->
+  </head>
+  <body
+    class="bg-linear-to-r from-purple-700 to-violet-950  to-pink-500 text-white"
+  >
+    <div
+      id="container"
+      class="items-center border-2 m-50 bg-sky-950 rounded-xl p-10 text-center"
+    >
+      <h1
+        class="border-2 rounded-xl p-5 text-5xl bg-linear-to-r from-purple-700 to-violet-950 "
+      >
+        Keylogger
+      </h1>
+      <p class="mt-5 bg-gradient-to-r from-purple-700 to-violet-950 rounded-xl">
+        A Basic JS Project
+      </p>
+
+      <div id="button-container" class="flex flex-row gap-10">
+        <button id="start-btn" class="text-xl p-2 bg-linear-to-r from-purple-700 to-violet-950 rounded-xl mt-50">
+          Start Logging Key Presses
+        </button>
+
+        <button id="stop-btn" class="text-xl p-2 bg-linear-to-r from-purple-700 to-violet-950  mt-50 rounded-xl">
+          Stop Logging Key Presses
+        </button>
+      </div>
+      <div id="button-container" class="flex flex-row gap-10">
+        <div
+          id="log"
+          class="w-500 h-50 flex border-2 rounded-xl p-10 mt-6 text-xl test-center text-white bg-linear-to-r from-purple-700 to-violet-950 "
+        ></div>
+        <div
+          id="state"
+          class="w-500 h-50 flex border-2 rounded-xl p-10 mt-6 text-xl test-center text-white bg-linear-to-r from-purple-700 to-violet-950 "
+        ></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
